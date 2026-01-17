@@ -1,11 +1,12 @@
-import React from "react";
-import { Players } from '../ListOfPlayers';
+import React from 'react';
 
-const Players = () => {
+const PlayersPresentation = ({ players }) => {
+    console.log(players);
+
     return (
         <>
             <div className="container">
-                {Players.map((player) => {
+                {players.map((player) => (
                     <div className="column">
                         <div className="card">
                             <img src={player.img} />
@@ -14,10 +15,10 @@ const Players = () => {
                             <p><button>Detail</button></p>
                         </div>
                     </div>
-                })}
+                ))}
             </div>
         </>
     )
 }
 
-export default Players;
+export default PlayersPresentation;

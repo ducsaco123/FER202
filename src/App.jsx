@@ -1,15 +1,15 @@
 
 import './App.css'
-import Footer from './exe1/Footer'
-import Navigation from './exe1/Navigation'
-import Pets from './exe1/Pets'
+import Footer from './component/Footer'
+import Main from './component/Main'
+import Navigation from './component/Navigation'
 
 function App() {
 
   return (
     <>
       <Navigation />
-      <Pets />
+      <Main />
       <Footer />
     </>
   )
